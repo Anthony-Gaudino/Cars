@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="SubHeader.scss" />
+
+<div id="subHeader">
+  <span>
+    <span class="label">Pick up: </span>
+    <span class="subheader-item"><b>${pickUpLocation}</b></span>
+    <span class="subheader-item"> at <b>${pickUpDate.substring(0, pickUpDate.length - 4).replace('T', ' ')}</b></span>
+  </span>
+  <span class="separator">|</span>
+  <span>
+    <span class="label">Return: </span>
+    <span class="subheader-item"><b>${returnLocation}</b></span>
+    <span class="subheader-item"> at <b>${returnDate.substring(0, pickUpDate.length - 4).replace('T', ' ')}</b></span>
+  </span>
+  <span class="filters">
+    <label for="carFilter">Filter:</label>
+    <select name="carfilter" id="carFilter">
+      <option value="asc">Price ascending</option>
+      <option value="desc">Price descending</option>
+    </select>
+  </span>
+</div>

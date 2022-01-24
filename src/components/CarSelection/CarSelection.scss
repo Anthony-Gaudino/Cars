@@ -1,0 +1,136 @@
+:host {
+  .back-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .back-button {
+      background: white;
+      font-size: 16px;
+      color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+      border-radius: 3px;
+      padding: 10px;
+      font-family: var(--font), sans-serif;
+      font-weight: 600;
+      min-width: 150px;
+
+      &:hover {
+        filter: brightness(85%);
+      }
+    }
+  }
+
+  .main-details {
+    width: 40%;
+  }
+
+  .first-details {
+    max-width: 350px;
+  }
+
+  .second-details {
+    max-width: 350px;
+  }
+
+  .card {
+  margin: 10px 20%;
+  display: flex;
+  flex-wrap: nowrap;
+
+  }
+
+  .car-details {
+    padding: 10px;
+    border: 1px dashed var(--border-color);
+    width: 75%;
+    float: left;
+    display: flex;
+
+    .car-pic {
+      //height: 200px;
+      width: 100%;
+    }
+
+    .qnt-items {
+      display: flex;
+      justify-content: space-between;
+
+      .qnt-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .qnt-img {
+          height: 25px;
+        }
+
+        .qnt-desc {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .select {
+    width: 25%;
+    background: var(--container-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+
+    .price {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .select-button {
+      background: var(--primary-color);
+      font-size: 16px;
+      color: white;
+      border: 1px solid var(--border-color);
+      border-radius: 3px;
+      padding: 10px;
+      font-family: var(--font), sans-serif;
+      font-weight: 600;
+      min-width: 150px;
+
+      &:hover {
+        filter: brightness(85%);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .card {
+      flex-wrap: wrap;
+    }
+
+    .select {
+      width: 100%;
+
+      .price {
+        margin: 0 40px 0 0;
+      }
+    }
+
+    .car-details {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .main-details {
+      width: 100%;
+    } 
+
+    .car-details {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}

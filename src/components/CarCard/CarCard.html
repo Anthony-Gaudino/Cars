@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="CarCard.scss" />
+
+<div class="car-details">
+  <header class="main-details">
+    <h2>${vehicle.Vehicle.VehMakeModel['@Name']}</h2>
+    <img src-="${vendorLogos[vendor['@Name'].toLowerCase()]}"/>
+  </header>
+
+  <div class="secondary-details">
+    <div class="first-details">
+      <img class="car-pic" src-="${vehicle.Vehicle.PictureURL}" alt="Vehicle image" />
+    </div>
+
+    <div class="second-details">
+      <div class="qnt-items">
+        <div class="qnt-item" title="Number of doors">
+          <img class="qnt-img" src="../../../public/icons/door.svg" alt="Door icon" />
+          <span class="qnt-desc">${vehicle.Vehicle['@DoorCount']}<span>
+        </div>
+        <div class="qnt-item" title="Number of seats">
+          <img class="qnt-img" src="../../../public/icons/person.svg" alt="Seat icon" />
+          <span class="qnt-desc">${vehicle.Vehicle['@PassengerQuantity']}<span>
+        </div>
+        <div class="qnt-item" title="Number of fitting baggages">
+          <img class="qnt-img" src="../../../public/icons/bag.svg" alt="Baggage icon" />
+          <span class="qnt-desc">${vehicle.Vehicle['@BaggageQuantity']}<span>
+        </div>
+        <div class="qnt-item" title="Fuel type">
+          <img class="qnt-img" src="../../../public/icons/fuel.svg" alt="Fuel pump icon" />
+          <span class="qnt-desc">${vehicle.Vehicle['@FuelType']}<span>
+        </div>
+        <div class="qnt-item" title="Transmission type">
+          <img class="qnt-img" src="../../../public/icons/transmission.svg" alt="Transmission icon" />
+          <span class="qnt-desc">${vehicle.Vehicle['@TransmissionType']}<span>
+        </div>
+        <div class="qnt-item" title="Has airconditioner">
+          <img class="qnt-img" src="../../../public/icons/snowflake.svg" alt="Air conditioner icon" />
+          <span class="qnt-desc">${vehicle.Vehicle['@AirConditionInd'] ? 'Yes' : 'No'}<span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="select">
+  <span class="price">${vehicle.TotalCharge['@RateTotalAmount']} ${vehicle.TotalCharge['@CurrencyCode']}</span>
+  <button class="select-button">Select</button>
+</div>

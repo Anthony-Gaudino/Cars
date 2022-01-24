@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #e6356f;
+  --text-color: #333;
+  --border-color: #e6356f;
+  --container-color: #c7c7cd;
+  --gray: #efefef;
+  --white: white;
+  --font: 'Open Sans';
+}
+
+body {
+  font-family: var(--font), sans-serif; 
+}

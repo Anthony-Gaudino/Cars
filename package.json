@@ -1,0 +1,30 @@
+{
+  "name": "anthony-coding-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Anthony Gaudino",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^8.7.0",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.0"
+  }
+}

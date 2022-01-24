@@ -1,0 +1,21 @@
+:host {
+  #subHeader {
+    display: flex;
+  }
+
+  .label {
+    color: var(--primary-color);
+  }
+
+  .separator {
+    padding: 0 20px;
+  }
+
+  .filters {
+    margin-left: 30px;
+
+    label {
+      color: var(--primary-color);
+    }
+  }
+}
